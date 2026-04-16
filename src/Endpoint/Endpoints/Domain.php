@@ -124,4 +124,26 @@ class Domain extends AbstractEndpoint
         
         return true;
     }
+    
+    /**
+     * @param string $name
+     * @param string $expirationDate
+     * @param int $period = 1
+     * @param string $periodUnit = 'y'
+     * 
+     * @return bool
+     */
+    public function renew(
+        string $name,
+        string $expirationDate,
+        int $period = 1,
+        string $periodUnit = 'y'
+    ): bool {
+        
+        $domainRenewCommand = new Commands\DomainRenew($name, $expirationDate, $period, $periodUnit);
+        
+        $document = $this->client->request($domainRenewCommand);
+        
+        return true;
+    }
 }
