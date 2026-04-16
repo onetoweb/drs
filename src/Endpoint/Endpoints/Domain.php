@@ -66,7 +66,6 @@ class Domain extends AbstractEndpoint
                 'trDate' => $this->client->getXmlValue($domainElement, 'trDate'),
                 'pw' => $this->client->getXmlValue($domainElement, 'pw'),
             ];
-            
         }
         
         return $results;

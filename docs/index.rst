@@ -34,3 +34,4 @@ Examples
 ========
 
 * `Domain <domain.rst>`_
+* `Reseller <reseller.rst>`_

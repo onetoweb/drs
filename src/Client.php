@@ -232,18 +232,21 @@ class Client
     }
     
     /**
-     * @param DOMElement $element
+     * @param ?DOMElement $element
      * @param string $tagName
      * 
      * @return string|NULL
      */
-    public function getXmlValue(DOMElement $element, string $tagName): ?string
+    public function getXmlValue(?DOMElement $element, string $tagName): ?string
     {
-        $tag = $element->getElementsByTagName($tagName);
-        
-        if ($tag->length > 0) {
+        if ($element !== null) {
             
-            return $tag->item(0)->nodeValue;
+            $tag = $element->getElementsByTagName($tagName);
+            
+            if ($tag->length > 0) {
+                
+                return $tag->item(0)->nodeValue;
+            }
         }
         
         return null;
