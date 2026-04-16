@@ -16,3 +16,4 @@
 
  - Add reseller endpoint
  - Add contact endpint
+ - Add host endpint

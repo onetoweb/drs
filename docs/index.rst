@@ -36,3 +36,4 @@ Examples
 * `Domain <domain.rst>`_
 * `Reseller <reseller.rst>`_
 * `Contact <contact.rst>`_
+* `Host <host.rst>`_
