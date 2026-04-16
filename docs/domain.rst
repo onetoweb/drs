@@ -28,8 +28,8 @@ Get domain info
     $result = $client->domain->info('example.com');
 
 
-Get domain info
-```````````````
+Register new domain
+```````````````````
 
 .. code-block:: php
     
