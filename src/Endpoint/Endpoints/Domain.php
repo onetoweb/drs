@@ -82,7 +82,7 @@ class Domain extends AbstractEndpoint
      * @param int $period = 1
      * @param string $periodUnit = 'y'
      * 
-     * @return true
+     * @return bool
      */
     public function create(
         string $name,
@@ -95,9 +95,32 @@ class Domain extends AbstractEndpoint
         string $periodUnit = 'y'
     ): bool {
         
-        $domainCreateCommand = new Commands\DomainCreate($name, $hostObj, $registrant, $adminHandle, $techHandle, $domainPw, $period, $periodUnit);
+        $domainCreateCommand = new Commands\DomainCreate(
+            $name,
+            $hostObj,
+            $registrant,
+            $adminHandle,
+            $techHandle,
+            $domainPw,
+            $period,
+            $periodUnit
+        );
         
         $document = $this->client->request($domainCreateCommand);
+        
+        return true;
+    }
+    
+    /**
+     * @param string $name
+     * 
+     * @return bool
+     */
+    public function delete(string $name): bool
+    {
+        $domainDeleteCommand = new Commands\DomainDelete($name);
+        
+        $document = $this->client->request($domainDeleteCommand);
         
         return true;
     }
