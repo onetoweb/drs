@@ -12,7 +12,7 @@ class DomainCheck extends AbstractCommand
     /**
      * @param array $domains = []
      */
-    function __construct(array $domains = [])
+    public function __construct(array $domains = [])
     {
         parent::__construct();
         

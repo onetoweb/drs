@@ -12,7 +12,7 @@ class ResellerCheck extends AbstractCommand
     /**
      * @param array $resellerIds
      */
-    function __construct(array $resellerIds)
+    public function __construct(array $resellerIds)
     {
         parent::__construct();
         

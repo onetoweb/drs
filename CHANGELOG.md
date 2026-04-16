@@ -15,5 +15,5 @@
 ## [1.0.3] - 2026-04-16
 
  - Add reseller endpoint
- - Add contact endpint
- - Add host endpint
+ - Add contact endpoint
+ - Add host endpoint

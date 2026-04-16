@@ -15,7 +15,7 @@ class DomainRenew extends AbstractCommand
      * @param int $period = 1
      * @param string $periodUnit = 'y'
      */
-    function __construct(
+    public function __construct(
         string $name,
         string $expirationDate,
         int $period = 1,

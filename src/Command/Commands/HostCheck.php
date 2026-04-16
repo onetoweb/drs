@@ -12,7 +12,7 @@ class HostCheck extends AbstractCommand
     /**
      * @param array $hostNames
      */
-    function __construct(array $hostNames)
+    public function __construct(array $hostNames)
     {
         parent::__construct();
         

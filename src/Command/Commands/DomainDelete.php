@@ -12,8 +12,8 @@ class DomainDelete extends AbstractCommand
     /**
      * @param string $name
      */
-    function __construct(string $name) {
-        
+    public function __construct(string $name)
+    {
         parent::__construct();
         
         $deleteElement = $this->createElement('delete');

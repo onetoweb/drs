@@ -12,7 +12,7 @@ class ContactInfo extends AbstractCommand
     /**
      * @param string $contactId
      */
-    function __construct(string $contactId)
+    public function __construct(string $contactId)
     {
         parent::__construct();
         

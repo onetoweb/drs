@@ -19,7 +19,7 @@ class DomainCreate extends AbstractCommand
      * @param int $period = 1
      * @param string $periodUnit = 'y'
      */
-    function __construct(
+    public function __construct(
         string $name,
         string $hostObj,
         string $registrant,

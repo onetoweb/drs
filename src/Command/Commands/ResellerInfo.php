@@ -12,7 +12,7 @@ class ResellerInfo extends AbstractCommand
     /**
      * @param string $resellerId
      */
-    function __construct(string $resellerId)
+    public function __construct(string $resellerId)
     {
         parent::__construct();
         

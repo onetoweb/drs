@@ -12,7 +12,7 @@ class ContactCheck extends AbstractCommand
     /**
      * @param array $contactIds
      */
-    function __construct(array $contactIds)
+    public function __construct(array $contactIds)
     {
         parent::__construct();
         

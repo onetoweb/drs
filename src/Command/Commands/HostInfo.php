@@ -12,7 +12,7 @@ class HostInfo extends AbstractCommand
     /**
      * @param string $hostName
      */
-    function __construct(string $hostName)
+    public function __construct(string $hostName)
     {
         parent::__construct();
         

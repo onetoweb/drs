@@ -12,7 +12,7 @@ class DomainInfo extends AbstractCommand
     /**
      * @param string $domain
      */
-    function __construct(string $domain)
+    public function __construct(string $domain)
     {
         parent::__construct();
         
